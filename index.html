@@ -20,6 +20,7 @@
 		<!--webfonts-->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<!--//webfonts-->
+		<script src='js/elevator.js'></script>
 		
 	
 	</head>
@@ -53,13 +54,6 @@
 								});
 							</script>
 				            <!-- search -->
-				            <div class="top-search">
-				            	<form>
-				            		<input type="text">
-				            		<input type="submit" value="Rechercher" />
-				            	</form>
-				            </div>
-				            <div class="clearfix"> </div>
 				            <!-- search -->
 				          </div>
 						  </div>
@@ -90,7 +84,7 @@
 					</div>
 						<div class="about-top-gridn  wow fadeIn" data-wow-delay="0.5s" >
 							<center>
-								<img class="img-responsive name-in" src="images/cell.png" title="Représentation_d_une_cellule" />
+								<img class="img-responsive name-in" src="images/cell.png" title="Représentation d'une cellule" />
 							</center>
 							<p align = "justify">La cellule est l'élément fonctionnel et structural de base des êtres vivants. C'est une entité complexe qui est, chez l'Homme, le fruit de millions d'années d'évolution. Chaque cellule contient divers éléments , tel que le matériel génétique, tous emprisonnés dans une membrane, qui garantit une forme d'autonomie (sans pour autant empêcher les interactions inter-cellulaires).</p><p align = "justify">Il existe énormément de types cellulaires différents (quelques centaines). Mais la controverse étudiée s'intéresse à un sous-ensemble de cellules particulières appelées cellules-souches. Une cellule-souche est une cellule présentant les deux particularités suivantes :
 							<ul>
@@ -154,34 +148,24 @@
 			</div>
 			<!-- our-news -->
 
+
+
 			<!-- bottom-grids -->
 			<div class="bottom-grids">
 				<div class="container">
-					<div class="col-md-9 bottom-grids-left  wow fadeInLeft" data-wow-delay="1s">
-						<h2>There are many variations of passages.</h2>
+					<div class="col-md-9 bottom-grids-left text-center  wow fadeInLeft" data-wow-delay="1s">
+						<h2>Une lettre de Michele Simonato.</h2>
 						<div class="col-md-4 bottom-grids-left-left">
-							<img class="img-responsive name-in" src="images/video.jpg" title="name" />
+							<img class="img-responsive name-in" src="images/Simonato.jpg" title="name" style="margin-Top:100px"/>
 						</div>
 						<div class="col-md-8 bottom-grids-left-right">
-							<h3>the majority have suffered alteration in some form.</h3>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-							<p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,  to generate Lorem Ipsum which looks reasonable.</p>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+							<p>Cher Paul,</p>
+							<p align="justify">Mon opinion sur l'affaire, qui je pense est celle partagée par la majorité de la communauté scientifique italienne, est un mélange de tristesse, de colère et de gratitude.</p>
+							<p align="justify">De la tristesse, pour les patients et leurs familles qui vivent dans le désespoir d'une maladie que la médecine ne peut encore traiter. Il n'y a pas de mots pour décrire leur souffrance et leur frustration. Ils méritent toute notre participation et notre respect et nous poussent à mettre toute notre force et notre courage dans nos recherches. […]</p>
+							<p align="justify">Mon deuxième sentiment est celui de colère. Colère contre ceux qui prennent avantage de ce désespoir. Comme vous le savez, 90 % des études en phase 3 en neurologie échouent. […]  La recherche internationale et la fondation Stamina prennent ainsi des directions opposées, et le risque que l'Italie prenne la direction de la fondation Stamina est une des raisons de la colère de la plupart des scientifiques Italiens.</p>
+							<p align="justify">Le dernier sentiment est celui de gratitude, envers tous ceux en accord avec ces idées. […] Un dialogue construit entre les scientifiques, les politiciens et les médias est essentiel pour l'élaboration d'un futur meilleur.</p>
+							<p>Michele Simonato, Professeur en Pharmacologie et Toxicologie au département des sciences médicales de l'université de Ferrara.</p>
 						</div>
-					</div>
-					<div class="col-md-3 bottom-grids-right wow fadeInRight" data-wow-delay="1s">
-						<h2>Our capabilities</h2>
-						<ul>
-							<li><a href="#"><span> </span>There are many variations</a></li>
-							<li><a href="#"><span> </span>suffered alteration</a></li>
-							<li><a href="#"><span> </span>variations of passages</a></li>
-							<li><a href="#"><span> </span>Lorem Ipsum available</a></li>
-							<li><a href="#"><span> </span>passages of Lorem Ipsum</a></li>
-							<li><a href="#"><span> </span>many variations of passage</a></li>
-							<li><a href="#"><span> </span>suffered alteration</a></li>
-							<li><a href="#"><span> </span>variations of passages</a></li>
-							<li><a href="#"><span> </span>Lorem Ipsum available</a></li>
-						</ul>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -200,8 +184,23 @@
 				            </ul>
 					</div>
 					<div class="footer-right wow fadeInRight" data-wow-delay="1s"	>
-						<p>ETIC<a href="http://ethique-tic.fr/2016/">2016</a></p>
+			            <div class="do-the-thing">
+			                <div class="elevator">
+						<p>ETIC 2016</p>
+							</div>
+			            </div>
 					</div>
+						<script>
+
+						// Simple elevator usage.
+						var elementButton = document.querySelector('.elevator');
+						var elevator = new Elevator({
+						element: elementButton,
+						mainAudio: './music/elevator.mp3', // Music from http://www.bensound.com/
+						endAudio:  './music/ding.mp3'
+						            });
+
+					</script>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
