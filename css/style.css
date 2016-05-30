@@ -464,7 +464,7 @@ a.news-btn:hover{
 	text-decoration:none;
 }
 .footer-left ul li a:hover{
-	color:#008e10;
+	color:#3366CC;
 }
 .footer-right{
 	float:right;
@@ -726,8 +726,8 @@ a.news-btn:hover{
 	-ms-transition:border-color 0.4s;
 }
 .contact-form-row div input[type="text"]:hover,.contact-form-row2 textarea:hover{
-	color:#008e10;
-	border-color:#008e10;
+	color:#3366CC;
+	border-color:#3366CC;
 }
 .contact-form-row div:nth-child(3){
 	margin-right:0;
