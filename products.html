@@ -12,6 +12,9 @@ Author: El Mansouri Ilyass
 		 <!-- animated-css -->
 		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 		<script src="js/wow.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 		<script>
 		 new WOW().init();
 		</script>
@@ -95,7 +98,7 @@ Author: El Mansouri Ilyass
 							<center>
 							<iframe width="860" height="615" src="https://www.youtube.com/embed/qMca6eGhrEs" frameborder="0" allowfullscreen></iframe>
 							<div class="jumbotron">
-							  <p><a class="btn btn-primary btn-lg" href="files/cellule_souche.pdf" role="button" target="_blank">Télécharger notre rapport sur les cellules souches</a></p>
+							  <p><a class="btn btn-primary btn-lg" href="files/cellulesouche.pdf" role="button" target="_blank">Télécharger notre rapport sur les cellules souches</a></p>
 							</div>
 							</center>
 						</div>
@@ -104,9 +107,82 @@ Author: El Mansouri Ilyass
 							<div class="about-head text-center wow bounceIn" data-wow-delay="0.4s">
 								<h3>Législation</h3>
 							</div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingOne">
+							      <h4 class="panel-title">
+							        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Décret 5 Décembre 2006
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							      <div class="panel-body">
+								  	<p>Le décret du 5 Décembre 2006 concerne les normes à respecter dans le cas des thérapies géniques ou thérapies cellulaires. Il explicite également les conditions requises pour avoir recours à des “soins compassionnels”. </p>
+								  	<p>Les points essentiels du décret sont les suivants : </p>
+								  	<ul>
+								  		<li>Les cellules utilisées doivent respecter les GMP (Good Manufacturing Practices).</li>
+											Il s’agit de normes établies par la commission européenne qui ont pour but de réduire tout risque de contamination du matériel cellulaire ou de confusion dues à des erreurs d’étiquetage. Elles réglementent également les conditions d’hygiène dans lesquelles doivent être effectuées toutes les manipulations.
+										<li>Les cellules utilisées doivent être traitées par l’un des 13 établissements autorisés par l’AIFA (Agence italienne de vigilance sur les médicaments).</li>
+										<li>Le traitement doit appartenir à la liste des traitements agréés par le ministère de la santé.</li>
+										<li>Concernant les soins dits “compassionnels”: l’utilisation de thérapies innovantes sur des patients n’ayant aucune alternative thérapeutique est possible sous réserve que des données scientifiques en faveur du traitement soient publiées dans une revue scientifique accréditée et qu’un comité d’éthique soit réuni et statue favorablement.</li>
+								  	</ul>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingTwo">
+							      <h4 class="panel-title">
+							        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Règlement (CE) n° 1394/2007 du Parlement européen
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							      <div class="panel-body">
+							      	Ce réglement européen définit les usages relatifs à la préparation des médicaments utilisés dans des thérapies innovantes dans tous les états membres de l'union Européenne.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingThree">
+							      <h4 class="panel-title">
+							        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							        	Décret Balduzzi (25 mars 2013)
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							      <div class="panel-body">
+							        <p>Le ministre de la santé Renato Balduzzi cherche à contrer la décision de l’AIFA de suspendre les activités de la fondation Stamina grâce au décret du 25 mars 2013.</p>
+									<p>Les points essentiels de ce décret sont les suivants : </p>
+									<ul>
+										<li>Les greffes de cellules souches mesenchymateuses sont autorisées dans les hôpitaux publiques même si elles ne respectent pas les normes GMP mais cela sous la responsabilité du médecin à l’initiative du traitement.</li>
+										<li>Les patients qui ont déjà commencé le traitement avec la fondation Stamina sont autorisés à le poursuivre sans avoir besoin d’effectuer un recours auprès du tribunal.</li>
+									</ul>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingFour">
+							      <h4 class="panel-title">
+							        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Affaire Durisotto v. Italy (application no. 62804/13)
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+							      <div class="panel-body">
+							      	Cette affaire a pour origine le refus de la part de l’hôpital de Brescia d’administrer la thérapie proposée par la fondation Stamina à Mlle Durisotto, atteinte d’une dégénérescence cérébrale depuis l’adolescence. Le père de la patiente a saisi la cour européenne des droits de l’homme suite à la décision de la cour italienne de refuser l’accès à la thérapie à sa fille.
+							      </div>
+							    </div>
+							  </div>
+
+							</div>
+
 							<center>
 							<div class="jumbotron">
-							  <p><a class="btn btn-primary btn-lg" href="#" role="button" target="_blank">Télécharger le rapport du juriste</a></p>
+							  <p><a class="btn btn-primary btn-lg" href="files/juriste.pdf" role="button" target="_blank">Télécharger le rapport du juriste</a></p>
 							</div>
 							</center>
 						</div>
